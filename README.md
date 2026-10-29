@@ -4,7 +4,7 @@
 
 ## 👋 Привет, я **JengasNX**
 
-**Full Stack Developer** · Python & JS · Telegram / Discord bots · web tools & admin panels
+**Full Stack Developer** · Python · JS · Lua · Telegram / Discord bots · web tools & admin panels
 
 I build real products end-to-end — from the idea and architecture to deployment.
 Everything on this profile comes from actual projects, not tutorials.
@@ -26,6 +26,7 @@ Everything on this profile comes from actual projects, not tutorials.
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
@@ -42,6 +43,7 @@ Everything on this profile comes from actual projects, not tutorials.
 - 🎂 **On GitHub since 2026** — fresh start, building in public
 - 🌐 **Full-stack portfolio site shipped** — Astro 7 + Tailwind 4, live GitHub data, RU/EN blog → [jengasnx.github.io](https://jengasnx.github.io/)
 - 🤖 **Bot & tooling experience** — Telegram / Discord bots, admin panels, dashboards and automation in Python & JS
+- 🎮 **Lua scripting for games** — [Trigger Highlight](https://github.com/JengasNX/trigger_highlight): MoonLoader script (SA-MP / Arizona RP) with an imgui in-game menu
 - 🔒 **Privacy-first workflow** — private email, 2FA enabled, no third-party stat renderers (this profile renders its own cards)
 
 ---
