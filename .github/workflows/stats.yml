@@ -19,6 +19,8 @@ jobs:
 
       - name: Generate stat SVGs
         run: python scripts/generate_stats.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit changes
         run: |
