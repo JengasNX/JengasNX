@@ -10,8 +10,7 @@ I build real products end-to-end — from the idea and architecture to deploymen
 Everything on this profile comes from actual projects, not tutorials.
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-jengasnx.github.io-0a7c66?style=for-the-badge)](https://jengasnx.github.io/)
-[![Telegram](https://img.shields.io/badge/Telegram-@nudnx-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/nudnx)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/1226424162307014688)
+[![Discord](https://img.shields.io/badge/Discord-helxij92-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/1226424162307014688)
 [![GitHub](https://img.shields.io/badge/GitHub-JengasNX-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JengasNX)
 
 ![Profile views](https://komarev.com/ghpvc/?username=JengasNX&color=0a7c66&style=flat-square&label=Profile+views)
