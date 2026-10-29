@@ -41,16 +41,14 @@ Everything on this profile comes from actual projects, not tutorials.
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=JengasNX&show_icons=true&theme=tokyonight&count_private=true&hide_border=true" alt="GitHub stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JengasNX&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages"/>
+<img height="190" src="https://raw.githubusercontent.com/JengasNX/JengasNX/master/README_assets/stats.svg" alt="GitHub stats"/>
+<img height="190" src="https://raw.githubusercontent.com/JengasNX/JengasNX/master/README_assets/languages.svg" alt="Most used languages"/>
 
 </div>
 
 <div align="center">
 
 [![GitHub streak](https://streak-stats.demolab.com?user=JengasNX&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-
-<img src="https://github-profile-trophy.vercel.app/?username=JengasNX&theme=tokyonight&no-frame=true&no-ff=true&margin-w=4" width="100%" alt="Trophies"/>
 
 </div>
 

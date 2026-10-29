@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="218" viewBox="0 0 540 218">
+<rect x="1" y="1" width="538" height="216" rx="10" fill="#1a1b27" stroke="#30334d" stroke-width="1"/>
+<text x="24" y="38" font-family="Segoe UI,Roboto,sans-serif" font-size="15" fill="#68d5ed" font-weight="600">GitHub stats — JengasNX</text>
+<text x="24" y="72" font-family="Segoe UI,Roboto,sans-serif" font-size="17">📊</text>
+<text x="24" y="100" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Commits (this year)</text>
+<text x="24" y="134" font-family="Segoe UI,Roboto,sans-serif" font-size="24" fill="#70a5fd" font-weight="700">8</text>
+<line x1="164" y1="46" x2="164" y2="116" stroke="#30334d" stroke-width="1"/>
+<text x="192" y="72" font-family="Segoe UI,Roboto,sans-serif" font-size="17">⭐</text>
+<text x="192" y="100" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Total Stars</text>
+<text x="192" y="134" font-family="Segoe UI,Roboto,sans-serif" font-size="24" fill="#70a5fd" font-weight="700">0</text>
+<line x1="332" y1="46" x2="332" y2="116" stroke="#30334d" stroke-width="1"/>
+<text x="360" y="72" font-family="Segoe UI,Roboto,sans-serif" font-size="17">🔀</text>
+<text x="360" y="100" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Pull Requests</text>
+<text x="360" y="134" font-family="Segoe UI,Roboto,sans-serif" font-size="24" fill="#70a5fd" font-weight="700">0</text>
+<text x="24" y="150" font-family="Segoe UI,Roboto,sans-serif" font-size="17">🐛</text>
+<text x="24" y="178" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Issues</text>
+<text x="24" y="212" font-family="Segoe UI,Roboto,sans-serif" font-size="24" fill="#70a5fd" font-weight="700">0</text>
+<line x1="164" y1="124" x2="164" y2="194" stroke="#30334d" stroke-width="1"/>
+<text x="192" y="150" font-family="Segoe UI,Roboto,sans-serif" font-size="17">👥</text>
+<text x="192" y="178" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Followers</text>
+<text x="192" y="212" font-family="Segoe UI,Roboto,sans-serif" font-size="24" fill="#70a5fd" font-weight="700">0</text>
+<line x1="332" y1="124" x2="332" y2="194" stroke="#30334d" stroke-width="1"/>
+<text x="360" y="150" font-family="Segoe UI,Roboto,sans-serif" font-size="17">📦</text>
+<text x="360" y="178" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Public Repos</text>
+<text x="360" y="212" font-family="Segoe UI,Roboto,sans-serif" font-size="24" fill="#70a5fd" font-weight="700">2</text>
+</svg>
