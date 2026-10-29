@@ -37,6 +37,15 @@ Everything on this profile comes from actual projects, not tutorials.
 
 ---
 
+### 🏆 Highlights
+
+- 🎂 **On GitHub since 2026** — fresh start, building in public
+- 🌐 **Full-stack portfolio site shipped** — Astro 7 + Tailwind 4, live GitHub data, RU/EN blog → [jengasnx.github.io](https://jengasnx.github.io/)
+- 🤖 **Bot & tooling experience** — Telegram / Discord bots, admin panels, dashboards and automation in Python & JS
+- 🔒 **Privacy-first workflow** — private email, 2FA enabled, no third-party stat renderers (this profile renders its own cards)
+
+---
+
 ### 📊 GitHub stats
 
 <div align="center">

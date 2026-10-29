@@ -9,6 +9,7 @@ import json
 import os
 import subprocess
 import urllib.request
+from datetime import date, datetime, timedelta, timezone
 
 USER = os.environ.get("GITHUB_USERNAME", "JengasNX")
 OUT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "README_assets"))
@@ -31,7 +32,15 @@ query($login: String!) {
     issues { totalCount }
     contributionsCollection {
       restrictedContributionsCount
-      contributionCalendar { totalContributions }
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays {
+            contributionCount
+            date
+          }
+        }
+      }
     }
   }
 }
@@ -78,20 +87,73 @@ C = {
 }
 
 
+def bytes_fmt(n: int) -> str:
+    if n >= 1024 * 1024:
+        return f"{n / 1024 / 1024:.1f}MB"
+    if n >= 1024:
+        return f"{n / 1024:.0f}KB"
+    return f"{n}B"
+
+
+def activity_info(weeks: list) -> tuple:
+    """(current_streak_days, last_active_date) из календаря контрибуций."""
+    days = [d for w in weeks for d in w["contributionDays"]]
+    days.sort(key=lambda d: d["date"])
+    last_active = None
+    for d in reversed(days):
+        if d["contributionCount"] > 0:
+            last_active = date.fromisoformat(d["date"])
+            break
+    streak = 0
+    if last_active is not None:
+        today = date.today()
+        # стрик считается живым, если последний вклад не старше вчерашнего дня
+        if (today - last_active).days <= 1:
+            streak = 1
+            check = last_active
+            by_date = {d["date"]: d["contributionCount"] for d in days}
+            while True:
+                prev = (check - timedelta(days=1)).isoformat()
+                if by_date.get(prev, 0) > 0:
+                    streak += 1
+                    check = date.fromisoformat(prev)
+                else:
+                    break
+    return streak, last_active
+
+
+def rel_date(d) -> str:
+    if d is None:
+        return "—"
+    diff = (date.today() - d).days
+    if diff <= 0:
+        return "Today"
+    if diff == 1:
+        return "Yesterday"
+    return d.strftime("%b %d")
+
+
 def stats_svg(d: dict) -> str:
     u = d["user"]
-    commits = (u["contributionsCollection"]["contributionCalendar"]["totalContributions"]
-               + u["contributionsCollection"]["restrictedContributionsCount"])
-    stars = sum(r["stargazerCount"] for r in u["repositories"]["nodes"])
+    cc = u["contributionsCollection"]
+    commits = cc["contributionCalendar"]["totalContributions"] + cc["restrictedContributionsCount"]
+    star_count = sum(r["stargazerCount"] for r in u["repositories"]["nodes"])
+    code_size = sum(
+        edge["size"] for r in u["repositories"]["nodes"] for edge in r["languages"]["edges"]
+    )
+    streak, last_active = activity_info(cc["contributionCalendar"]["weeks"])
     cells = [
-        ("📊", "Commits (this year)", commits),
-        ("⭐", "Total Stars", stars),
-        ("🔀", "Pull Requests", u["pullRequests"]["totalCount"]),
-        ("🐛", "Issues", u["issues"]["totalCount"]),
-        ("👥", "Followers", u["followers"]["totalCount"]),
-        ("📦", "Public Repos", u["repositories"]["totalCount"]),
+        ("📊", "Commits (this year)", fmt(commits)),
+        ("⭐", "Total Stars", fmt(star_count)),
+        ("🔀", "Pull Requests", fmt(u["pullRequests"]["totalCount"])),
+        ("🐛", "Issues", fmt(u["issues"]["totalCount"])),
+        ("👥", "Followers", fmt(u["followers"]["totalCount"])),
+        ("📦", "Public Repos", fmt(u["repositories"]["totalCount"])),
+        ("💾", "Code Size", bytes_fmt(code_size)),
+        ("🔥", "Current Streak", f"{streak}d" if streak else "0d"),
+        ("⏱", "Last Activity", rel_date(last_active)),
     ]
-    w, h, cw = 540, 218, 168
+    w, h, cw, rh = 540, 296, 168, 78
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">',
         f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="10" fill="{C["bg"]}" stroke="{C["border"]}" stroke-width="1"/>',
@@ -101,12 +163,15 @@ def stats_svg(d: dict) -> str:
     for i, (icon, label, value) in enumerate(cells):
         col, row = i % 3, i // 3
         x = 24 + col * cw
-        y = 72 + row * 78
+        y = 72 + row * rh
         parts.append(f'<text x="{x}" y="{y}" font-family="Segoe UI,Roboto,sans-serif" font-size="17">{icon}</text>')
         parts.append(f'<text x="{x}" y="{y+28}" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="{C["label"]}">{esc(label)}</text>')
-        parts.append(f'<text x="{x}" y="{y+62}" font-family="Segoe UI,Roboto,sans-serif" font-size="24" fill="{C["num"]}" font-weight="700">{fmt(value)}</text>')
+        parts.append(f'<text x="{x}" y="{y+62}" font-family="Segoe UI,Roboto,sans-serif" font-size="24" fill="{C["num"]}" font-weight="700">{esc(value)}</text>')
         if col < 2:
             parts.append(f'<line x1="{x + cw - 28}" y1="{y - 26}" x2="{x + cw - 28}" y2="{y + 44}" stroke="{C["border"]}" stroke-width="1"/>')
+    # нижний футер: время обновления (UTC)
+    updated = datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC")
+    parts.append(f'<text x="{w-20}" y="{h-14}" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="11" fill="#6b7089">updated {updated}</text>')
     parts.append("</svg>")
     return "\n".join(parts)
 
@@ -141,6 +206,8 @@ def languages_svg(d: dict) -> str:
             parts.append(f'<rect x="24" y="{y+16}" width="{w-48}" height="6" rx="3" fill="{C["bar_bg"]}"/>')
             bw = max(3, int((w - 48) * size / total)) if total else 3
             parts.append(f'<rect x="24" y="{y+16}" width="{bw}" height="6" rx="3" fill="{color}"/>')
+        updated = datetime.now(timezone.utc).strftime("%d %b %Y")
+        parts.append(f'<text x="{w-20}" y="{h-8}" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="10" fill="#6b7089">updated {updated}</text>')
         parts.append("</svg>")
     else:
         w, h = 340, 90
