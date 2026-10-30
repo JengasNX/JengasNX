@@ -1,35 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="340" height="240" viewBox="0 0 340 240">
-<rect x="1" y="1" width="338" height="238" rx="10" fill="#1a1b27" stroke="#30334d" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="274" viewBox="0 0 340 274">
+<rect x="1" y="1" width="338" height="272" rx="10" fill="#1a1b27" stroke="#30334d" stroke-width="1"/>
 <text x="24" y="34" font-family="Segoe UI,Roboto,sans-serif" font-size="15" fill="#68d5ed" font-weight="600">Most used languages</text>
-<rect x="24" y="52" width="10" height="10" rx="2" fill="#3178c6"/>
-<text x="42" y="62" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">TypeScript</text>
-<text x="316" y="62" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">38.1%</text>
+<rect x="24" y="52" width="10" height="10" rx="2" fill="#3572A5"/>
+<text x="42" y="62" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Python</text>
+<text x="316" y="62" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">47.9%</text>
 <rect x="24" y="68" width="292" height="6" rx="3" fill="#252a41"/>
-<rect x="24" y="68" width="111" height="6" rx="3" fill="#3178c6"/>
-<rect x="24" y="86" width="10" height="10" rx="2" fill="#ff5a03"/>
-<text x="42" y="96" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Astro</text>
-<text x="316" y="96" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">28.7%</text>
+<rect x="24" y="68" width="139" height="6" rx="3" fill="#3572A5"/>
+<rect x="24" y="86" width="10" height="10" rx="2" fill="#3178c6"/>
+<text x="42" y="96" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">TypeScript</text>
+<text x="316" y="96" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">20.9%</text>
 <rect x="24" y="102" width="292" height="6" rx="3" fill="#252a41"/>
-<rect x="24" y="102" width="83" height="6" rx="3" fill="#ff5a03"/>
-<rect x="24" y="120" width="10" height="10" rx="2" fill="#000080"/>
-<text x="42" y="130" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Lua</text>
-<text x="316" y="130" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">19.4%</text>
+<rect x="24" y="102" width="61" height="6" rx="3" fill="#3178c6"/>
+<rect x="24" y="120" width="10" height="10" rx="2" fill="#ff5a03"/>
+<text x="42" y="130" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Astro</text>
+<text x="316" y="130" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">15.8%</text>
 <rect x="24" y="136" width="292" height="6" rx="3" fill="#252a41"/>
-<rect x="24" y="136" width="56" height="6" rx="3" fill="#000080"/>
-<rect x="24" y="154" width="10" height="10" rx="2" fill="#663399"/>
-<text x="42" y="164" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">CSS</text>
-<text x="316" y="164" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">8.3%</text>
+<rect x="24" y="136" width="46" height="6" rx="3" fill="#ff5a03"/>
+<rect x="24" y="154" width="10" height="10" rx="2" fill="#000080"/>
+<text x="42" y="164" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Lua</text>
+<text x="316" y="164" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">10.6%</text>
 <rect x="24" y="170" width="292" height="6" rx="3" fill="#252a41"/>
-<rect x="24" y="170" width="24" height="6" rx="3" fill="#663399"/>
-<rect x="24" y="188" width="10" height="10" rx="2" fill="#3572A5"/>
-<text x="42" y="198" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Python</text>
-<text x="316" y="198" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">5.3%</text>
+<rect x="24" y="170" width="31" height="6" rx="3" fill="#000080"/>
+<rect x="24" y="188" width="10" height="10" rx="2" fill="#663399"/>
+<text x="42" y="198" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">CSS</text>
+<text x="316" y="198" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">4.6%</text>
 <rect x="24" y="204" width="292" height="6" rx="3" fill="#252a41"/>
-<rect x="24" y="204" width="15" height="6" rx="3" fill="#3572A5"/>
+<rect x="24" y="204" width="13" height="6" rx="3" fill="#663399"/>
 <rect x="24" y="222" width="10" height="10" rx="2" fill="#f1e05a"/>
 <text x="42" y="232" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">JavaScript</text>
-<text x="316" y="232" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">0.2%</text>
+<text x="316" y="232" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">0.1%</text>
 <rect x="24" y="238" width="292" height="6" rx="3" fill="#252a41"/>
 <rect x="24" y="238" width="3" height="6" rx="3" fill="#f1e05a"/>
-<text x="320" y="232" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="10" fill="#6b7089">updated 29 Oct 2026</text>
+<rect x="24" y="256" width="10" height="10" rx="2" fill="#384d54"/>
+<text x="42" y="266" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Dockerfile</text>
+<text x="316" y="266" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">0.1%</text>
+<rect x="24" y="272" width="292" height="6" rx="3" fill="#252a41"/>
+<rect x="24" y="272" width="3" height="6" rx="3" fill="#384d54"/>
+<text x="320" y="266" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="10" fill="#6b7089">updated 30 Oct 2026</text>
 </svg>
