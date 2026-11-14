@@ -8,9 +8,9 @@
 <rect x="24" y="68" width="154" height="6" rx="3" fill="#e34c26"/>
 <rect x="24" y="86" width="10" height="10" rx="2" fill="#3178c6"/>
 <text x="42" y="96" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">TypeScript</text>
-<text x="316" y="96" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">22.4%</text>
+<text x="316" y="96" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">22.1%</text>
 <rect x="24" y="102" width="292" height="6" rx="3" fill="#252a41"/>
-<rect x="24" y="102" width="65" height="6" rx="3" fill="#3178c6"/>
+<rect x="24" y="102" width="64" height="6" rx="3" fill="#3178c6"/>
 <rect x="24" y="120" width="10" height="10" rx="2" fill="#3572A5"/>
 <text x="42" y="130" font-family="Segoe UI,Roboto,sans-serif" font-size="13" fill="#a9b1d6">Python</text>
 <text x="316" y="130" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">9.1%</text>
@@ -36,5 +36,5 @@
 <text x="316" y="266" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="12" fill="#bfe1f9">0.7%</text>
 <rect x="24" y="272" width="292" height="6" rx="3" fill="#252a41"/>
 <rect x="24" y="272" width="3" height="6" rx="3" fill="#f1e05a"/>
-<text x="320" y="266" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="10" fill="#6b7089">updated 13 Nov 2026</text>
+<text x="320" y="266" text-anchor="end" font-family="Segoe UI,Roboto,sans-serif" font-size="10" fill="#6b7089">updated 14 Nov 2026</text>
 </svg>
